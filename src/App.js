@@ -13,14 +13,14 @@ function App() {
   
   console.log(state);
 
-  function reducer(prevVideo, action) {
+  function reducer(videoState, action) {
     switch (action.type) {
       case "SET_VIDEO":
         return {id:{videoId: action.payload}}
       // case "INITIAL_LIST":
       //   return {videos: action.payload}
       default:
-        return prevVideo;
+        return videoState;
     }
   }
 
@@ -39,14 +39,14 @@ function App() {
   function fetchVideos() {
     return videoData;
   }
-  
+
 
   return (
     <div className="App">
       <NavBar />
       <section className="content-container">
         <VideoPlayer selectedVideo={null}/>
-        <VideoList videos={fetchVideos()}/>
+        <VideoList videos={state.videos} selected={state.selectedVideo}/>
       </section>
     </div>
   );

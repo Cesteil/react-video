@@ -5,10 +5,10 @@ function VideoListItem({ video }) {
   function handleClick(e){ 
     let currId = e.currentTarget.attributes.getNamedItem("data-id").value;
     console.log(e.currentTarget.attributes.getNamedItem("data-id").value)
-    // dispatch({
-    //   type:"SET_VIDEO",
-    //   id:{videoId:currId}
-    // })
+    dispatch({
+      type:"SET_VIDEO",
+      id:{videoId:currId}
+    })
   }
   
   return (
