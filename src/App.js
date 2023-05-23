@@ -5,48 +5,46 @@ import VideoList from './VideoList';
 import videoData from './videoData';
 import {useReducer, useEffect} from "react";
 
+function reducer(state, action) {
+  switch (action.type) {
+    case "SET_VIDEOS":
+     return {...state, videos: action.payload};
+    case "SET_SELECTED_VIDEO":
+      return {...state, selectedVideo: action.payload}
+    default:
+      return state;
+  }
+}
 
+const initialState = {
+  videos:[],
+  selectedVideo:null
+}
 
 function App() {
   const [state, dispatch] = 
-    useReducer(reducer, {videos:fetchVideos(), selectedVideo:''});
+    useReducer(reducer, initialState);
   
   console.log(state);
 
-  function reducer(videoState, action) {
-    switch (action.type) {
-      case "SET_VIDEO":
-        return {id:{videoId: action.payload}}
-      // case "INITIAL_LIST":
-      //   return {videos: action.payload}
-      default:
-        return videoState;
+  useEffect(() => {
+    const action = {
+      type: "SET_VIDEOS",
+      payload: fetchVideos(),
     }
-  }
-
-  // useEffect(() => {
-  //   dispatch = fetchVideos()
-  // },[])
-  
-  // function handleVideoClick(e) {
-  //   console.log("you clicked a video");
-  //   dispatch({
-  //     type: 'SET_VIDEO',
-  //     videoId: e.target.id.videoId
-  //   });
-  // }
+    dispatch(action)
+  },[])
 
   function fetchVideos() {
     return videoData;
   }
 
-
   return (
     <div className="App">
       <NavBar />
       <section className="content-container">
-        <VideoPlayer selectedVideo={null}/>
-        <VideoList videos={state.videos} selected={state.selectedVideo}/>
+        <VideoPlayer selectedVideo={state.selectedVideo}/>
+        <VideoList videos={state.videos} dispatch={dispatch}/>
       </section>
     </div>
   );

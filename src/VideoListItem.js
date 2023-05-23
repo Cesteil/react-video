@@ -1,18 +1,16 @@
-import dispatch from "./App.js"
 
-function VideoListItem({ video }) {
+function VideoListItem({ video, dispatch }) {
   
-  function handleClick(e){ 
-    let currId = e.currentTarget.attributes.getNamedItem("data-id").value;
-    console.log(e.currentTarget.attributes.getNamedItem("data-id").value)
-    // dispatch({
-    //   type:"SET_VIDEO",
-    //   id:{videoId:currId}
-    // })
+  function selectVideo(e){ 
+    const action = {
+      type: "SET_SELECTED_VIDEO",
+      payload: video
+    }
+    dispatch(action);
   }
   
   return (
-    <div className="video-list-item"  onClick={handleClick} data-id={video.id.videoId}>
+    <div className="video-list-item"  onClick={selectVideo}>
       <header>
         <img src={video.snippet.thumbnails.default.url} className="video-list-item-thumbnail"></img>
       </header>
