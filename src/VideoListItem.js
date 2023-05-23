@@ -1,7 +1,17 @@
+import dispatch from "./App.js"
 
 function VideoListItem({ video }) {
+  
+  function handleClick(e){
+    console.log(e)
+    // dispatch({
+    //   type:"SET_VIDEO",
+    //   selectedVideo:
+    // })
+  }
+  
   return (
-    <div className="video-list-item">
+    <div className="video-list-item"  onClick={handleClick}>
       <header>
         <img src={video.snippet.thumbnails.default.url} className="video-list-item-thumbnail"></img>
       </header>
