@@ -171,40 +171,6 @@ const videoData = [
   },
   {
     "kind": "youtube#searchResult",
-    "etag": "XLtCZnyEx4NrjJAnpMSLYhVr4uA",
-    "id": {
-      "kind": "youtube#playlist",
-      "playlistId": "PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3"
-    },
-    "snippet": {
-      "publishedAt": "2018-10-29T12:01:47Z",
-      "channelId": "UC80PWRj_ZU8Zu0HSMNVwKWw",
-      "title": "ReactJS Tutorial for Beginners",
-      "description": "React is an open source javascript library for building user interfaces. React is a project created and maintained by Facebook.",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/QFaFIcGhPoM/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/QFaFIcGhPoM/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/QFaFIcGhPoM/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        }
-      },
-      "channelTitle": "Codevolution",
-      "liveBroadcastContent": "none",
-      "publishTime": "2018-10-29T12:01:47Z"
-    }
-  },
-  {
-    "kind": "youtube#searchResult",
     "etag": "TDgB3Iw-GaQcczU2styOAGHjl9I",
     "id": {
       "kind": "youtube#video",
@@ -405,40 +371,6 @@ const videoData = [
       "channelTitle": "Web Dev Simplified",
       "liveBroadcastContent": "none",
       "publishTime": "2021-12-14T17:00:10Z"
-    }
-  },
-  {
-    "kind": "youtube#searchResult",
-    "etag": "ipb-f0C50KISs8vJeFcSQvVId4Y",
-    "id": {
-      "kind": "youtube#playlist",
-      "playlistId": "PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d"
-    },
-    "snippet": {
-      "publishedAt": "2020-12-21T08:37:55Z",
-      "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
-      "title": "Full Modern React Tutorial",
-      "description": "Hey gang, in this full React tutorial series, I'll take you from novice to ninja. We'll cover all the basics - what React is, setting up, ...",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/j942wKiXFu8/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/j942wKiXFu8/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/j942wKiXFu8/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        }
-      },
-      "channelTitle": "The Net Ninja",
-      "liveBroadcastContent": "none",
-      "publishTime": "2020-12-21T08:37:55Z"
     }
   },
   {
@@ -813,40 +745,6 @@ const videoData = [
       "channelTitle": "freeCodeCamp.org",
       "liveBroadcastContent": "none",
       "publishTime": "2020-10-06T14:16:07Z"
-    }
-  },
-  {
-    "kind": "youtube#searchResult",
-    "etag": "sjEO2Br8YHs4IW3u2pBJTM3TW5I",
-    "id": {
-      "kind": "youtube#playlist",
-      "playlistId": "PLSsAz5wf2lkK_ekd0J__44KG6QoXetZza"
-    },
-    "snippet": {
-      "publishedAt": "2021-11-29T08:28:53Z",
-      "channelId": "UC6wN_7yMS0dmb4LkDSPkJ2g",
-      "title": "React JS Tutorial For Beginners 2023",
-      "description": "",
-      "thumbnails": {
-        "default": {
-          "url": "https://i.ytimg.com/vi/oFBuPWCjbA4/default.jpg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i.ytimg.com/vi/oFBuPWCjbA4/mqdefault.jpg",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i.ytimg.com/vi/oFBuPWCjbA4/hqdefault.jpg",
-          "width": 480,
-          "height": 360
-        }
-      },
-      "channelTitle": "Code Stoic",
-      "liveBroadcastContent": "none",
-      "publishTime": "2021-11-29T08:28:53Z"
     }
   }
 ]

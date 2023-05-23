@@ -16,7 +16,7 @@ function App() {
   function reducer(prevVideo, action) {
     switch (action.type) {
       case "SET_VIDEO":
-        return {videoId: action.payload}
+        return {id:{videoId: action.payload}}
       // case "INITIAL_LIST":
       //   return {videos: action.payload}
       default:
@@ -28,22 +28,17 @@ function App() {
   //   videosDispatch = fetchVideos()
   // },[])
   
-  function handleVideoClick(e) {
-    console.log("you clicked a video");
-    dispatch({
-      type: 'SET_VIDEO',
-      videoId: e.target.id.videoId
-    });
-  }
+  // function handleVideoClick(e) {
+  //   console.log("you clicked a video");
+  //   dispatch({
+  //     type: 'SET_VIDEO',
+  //     videoId: e.target.id.videoId
+  //   });
+  // }
 
   function fetchVideos() {
     return videoData;
   }
-
-  const testVideo = {
-  "id": {
-    "videoId": "bMknfKXIFA8"
-  }}
 
   return (
     <div className="App">
