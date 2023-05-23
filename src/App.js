@@ -25,7 +25,7 @@ function App() {
   }
 
   // useEffect(() => {
-  //   videosDispatch = fetchVideos()
+  //   dispatch = fetchVideos()
   // },[])
   
   // function handleVideoClick(e) {
@@ -39,6 +39,7 @@ function App() {
   function fetchVideos() {
     return videoData;
   }
+  
 
   return (
     <div className="App">
